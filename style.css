@@ -1,0 +1,91 @@
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(232, 164, 235);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.timer__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.change__length{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.break__session__length{
+    display: flex;
+}
+
+.break__element, .session__element{
+    margin: 40px;
+}
+
+.timer{
+    font-size: 60px;
+    font-weight: 700;
+    color: #9a1eba;
+}
+
+.labels{
+    margin: 18px;
+}
+
+.icons, .pause__reset{
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.pause__reset{
+    margin: 15px;
+}
+
+.timer__container{
+    border: 6px solid rgb(59, 50, 50);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 90px;
+}
+
+.break__title, .session__title, .timer{
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 420px){
+    .timer__container{
+        padding: 18px 65px;
+    }
+    .break__element, .session__element{
+        margin: 20px;
+    }
+    .break__session__length{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .timer__container{
+        padding: 10px 30px;
+    }
+}
+
